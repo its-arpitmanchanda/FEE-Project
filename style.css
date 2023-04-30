@@ -1,0 +1,149 @@
+*{
+    /* border: 2px solid red; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(144, 201, 250);
+}
+ .image{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.image img{
+    height: 70%;
+    width: 70%;
+}
+
+
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.links a,.links p{
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+
+svg{
+    height: 70%;
+    width: 70%;
+}
+
+
+.instagram a{
+    color: purple;
+    transition: all 0.5s;
+}
+.instagram a:hover{
+    background-color: purple;
+    color: white;
+}
+
+
+.facebook a{
+    color: blue;
+    transition: all 0.5s;
+}
+.facebook a:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+.youtube a{
+    color: red;
+    transition: all 0.5s;
+}
+.youtube a:hover{
+    background-color: red;
+    color: white;
+}
+
+
+.whatsapp a{
+    color: green;
+    transition: all 0.5s;
+}
+.whatsapp a:hover{
+    background-color: green;
+    color: white;
+}
+
+
+.website a{
+    color: gray;
+    transition: all 0.5s;
+}
+.website a:hover{
+    background-color: gray;
+    color: white;
+}
+
+
+.twitter a{
+    color: rgb(44, 171, 250);
+    transition: all 0.5s;
+}
+.twitter a:hover{
+    background-color: rgb(44, 171, 250);
+    color: white;
+}
+
+
+.linkedin a{
+    color: blue;
+    transition: all 0.5s;
+}
+.linkedin a:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+.wikipedia a{
+    color: black;
+    transition: all 0.5s;
+}
+.wikipedia a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+@media (max-width:600px){
+    .main{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .image{
+        order: -1;
+    }
+    .links{
+        grid-template-columns: 1fr 1fr;
+    }
+}
